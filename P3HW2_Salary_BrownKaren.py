@@ -19,6 +19,8 @@
 
     # else
         # calculate gross pay by multiplying total hours by pay rate
+        # regular pay is the same as gross pay
+        # overtime hours and pay is 0
     #print the following
         #Employee's name
         #the following headings and their corresponding values in columns underneath 
@@ -48,6 +50,9 @@ if total_hours > 40:
     gross_pay = regular_pay + overtime_pay
 else:
     gross_pay = total_hours * pay_rate
+    regular_pay = gross_pay
+    overtime_hours = 0
+    overtime_pay = 0
 
 print("-------------------------------------")
 print(f"{'Employee Name:':<17} {employee_name}")
